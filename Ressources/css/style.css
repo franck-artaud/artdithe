@@ -1,0 +1,147 @@
+/* DOCUMENT INFORMATIONS
+    -Document : l'art du thé
+    -version : 1.0.0
+    -author : Franck ARTAUD
+*/
+
+/* DEFAULT COLORS
+    -default : Montserrat
+    -h1
+    -H2
+    -h3
+
+    -button
+    -button:hover
+
+    -border
+*/
+
+/*FONTS
+    -default
+    -subtitle
+*/
+
+/* CSS DIRECTORY
+    1 = GLOBAL
+    2 = HEADER
+*/
+
+/* GLOBAL
+========================================================*/
+
+html {
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "muli", "arial", "sans-serif";
+    color : #eee;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 200;
+    word-spacing: 6px;
+}
+
+h2 {
+    font-family: "muli", "arial", "sans-serif";
+    color : #f42626;
+    font-weight: 700;
+    
+
+}
+
+p{
+      font-family: "muli", "arial", "sans-serif";
+}
+
+
+
+/* HEADER
+========================================================*/
+header {
+    background-image:linear-gradient(rgba(255, 0, 0, 0.1),
+                                     rgba(255, 0, 0, 0.3)
+                                                         ),
+                                     url(../images/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.home-title{
+    position: absolute;
+    top: 10%;
+    
+}
+
+.home-title h1{
+    font-size: 300%;
+    color:#eee;
+}
+
+.home-title h1 span{
+    font-weight: 900;
+    color: rgba(255, 0, 0, 0.8);
+}
+
+.home-title p{
+    color: #fff;
+}
+
+            /* BUTTONS */
+
+.btn{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "muli", "arial", "sans-serif";
+    font-weight: 400;
+    transition: background-color 1s, color 1s, border 1s; 
+
+}
+
+.btn-full{
+    background-color: azure;
+    color:#ed7c7c;
+    margin-right: 15px;
+}
+
+.btn-ghost{
+    border:1px solid #eee;
+    color:#ed7c7c; 
+}
+
+.btn-full:hover{
+    background-color: #ed7c7c;
+    color:#fff;
+}
+
+.btn-ghost:hover{
+    color:#fff;
+    border:1px solid #ed7c7c;
+}
+
+/* NOS PRODUITS */
+
+.tea{
+    background-image: url(../images/tea.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-title{
+    position: relative;
+    top: 30px;
+    text-transform: uppercase;
+}
+
+.section-title:after{
+    display: block;
+    height: 6px;
+    content: "";
+    background-color:#ed7c7c;
+    width: 100px;
+}
